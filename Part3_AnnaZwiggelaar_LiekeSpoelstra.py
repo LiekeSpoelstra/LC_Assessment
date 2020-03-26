@@ -61,11 +61,11 @@ print("This program will generate a bingo card at random from the words you "
       "word on the third row would have coordinates 2 (for the row) and 1 "
       "(for the word).")
 
-ready_to_start = input("Enter 'yes' when ready to start the game: ")
+ready_to_start = input("Enter 'yes' when ready to start the game: ")    # only start when the user is ready
 if ready_to_start == "yes":
     play_game(bingo_list, random_bingo_list)
 
-new_game = input("Do you want to play another game? (yes or no) ")
+new_game = input("Do you want to play another game? (yes or no) ")    # only play a new game when the user wants to
 if new_game == "yes":
     del random_bingo_list[0:len(random_bingo_list)+1]
     play_game(bingo_list, random_bingo_list)
