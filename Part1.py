@@ -1,4 +1,6 @@
 
+#    this code was written by Anna Zwiggelaar and Lieke Spoelstra
+
 list_of_terms = []      # create an empty list to add terms to
 words_added = []        # create an empty list to keep track of all terms given
 # by the user (including those given more than once)
@@ -11,7 +13,7 @@ while len(list_of_terms) < 35:      # add 35 terms to the list
     elif new_word in list_of_terms:
         print("You have already added this word. Please add a new word.")
 
-print("Thank you! Please proceed to the next program.")
+print("Thank you! Please proceed to program 3.")
 
 with open("assessment.txt", "a") as myfile:     # write the list of terms to a text file
     for word in list_of_terms:
@@ -24,4 +26,3 @@ for word in words_added:
 
 #    print(frequencies)    #  remove the hash before this print statement to see
 #  how many times the user added a certain term, i.e. how relevant it is
-
